@@ -6,10 +6,10 @@ import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import path from "node:path";
 
 // Standard Vite + React SPA. Output is a static dist/ folder suitable
-// for GitHub Pages. Uses relative asset paths (`base: "./"`) and the
+// for GitHub Pages. Uses relative asset paths and the
 // router runs in hash mode so deep links work on static hosts.
 export default defineConfig({
-  base: "./",
+  base: "/Omni-Musk/",
   plugins: [
     tanstackRouter({ target: "react", autoCodeSplitting: true }),
     react(),

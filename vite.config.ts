@@ -5,11 +5,10 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import path from "node:path";
 
-// Standard Vite + React SPA. Output is a static dist/ folder suitable
-// for GitHub Pages. Uses relative asset paths and the
-// router runs in hash mode so deep links work on static hosts.
+// Standard Vite + React SPA. Output is optimized for Vercel deployment.
+// Router runs in hash mode for client-side routing.
 export default defineConfig({
-  base: "/Omni-Musk/",
+  base: "./",
   plugins: [
     tanstackRouter({ target: "react", autoCodeSplitting: true }),
     react(),
